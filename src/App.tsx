@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
+import { SuperList, UserItem } from './components';
 import { useAppDispatch, useAppSelector } from './hooks';
+import { IUser } from './models';
 import { fetchUsers } from './store/reducers/ActionCreators';
 
 
@@ -12,7 +14,11 @@ function App() {
   }, [dispatch])
   return (
     <div className="App">
-      {JSON.stringify(users, null, 2)}
+      <SuperList
+        items={users}
+        renderItem={(user: IUser) => <UserItem user={user} key={user.id} />}
+      />
+     
     </div>
   );
 }
