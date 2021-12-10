@@ -1,0 +1,19 @@
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "body": "typicode" },
+    { "id": 2, "title": "json-servers", "body": "typicodes" },
+    { "id": 3, "title": "json-serverx", "body": "typicodex" },
+    { "id": 4, "title": "json-serverc", "body": "typicodec" },
+    { "id": 5, "title": "json-serverc", "body": "bvcx" },
+    { "id": 6, "title": "json-serverc", "body": "tyqwert" },
+    { "id": 7, "title": "json-serverc", "body": "typ23edqw234rfedsz" },
+    { "id": 8, "title": "json-serverc", "body": "t876tfbn c" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment", "postId": 2 },
+    { "id": 3, "body": "some comment", "postId": 3 },
+    { "id": 4, "body": "some comment", "postId": 4 }
+  ],
+  "profile": { "name": "typicode" }
+}

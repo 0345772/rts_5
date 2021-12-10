@@ -1,6 +1,6 @@
 import React from 'react';
 import { PostItem } from './PostItem';
-import { postAPI } from './../../services/PostService';
+import { postAPI } from './../../services';
 
 export const PostContainer = () => {
   const { data: posts, isLoading, error } = postAPI.useFetchAllPostsQuery(30)
