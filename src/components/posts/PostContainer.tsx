@@ -3,7 +3,8 @@ import { PostItem } from './PostItem';
 import { postAPI } from './../../services';
 
 export const PostContainer = () => {
-  const { data: posts, isLoading, error } = postAPI.useFetchAllPostsQuery(30)
+  const { data: posts, isLoading, error } = postAPI.useFetchAllPostsQuery(20)
+  
   return (
     <div>
       <h3 className="signature">Список постов:</h3>
@@ -15,3 +16,5 @@ export const PostContainer = () => {
     </div>
   );
 };
+
+

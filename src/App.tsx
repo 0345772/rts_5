@@ -1,15 +1,16 @@
 import React from 'react';
-import { PostContainer, UsersContainer } from './components';
-import { TodoContainter } from './components/todos/TodoContainter';
+import { PostContainer, UsersContainer, TodoContainter } from './components';
 
 function App() {
   return (
     <div className="App">
+      <TodoContainter />
+      <hr />
+
       <UsersContainer />
       <hr style={{ margin: "10px" }} />
       <PostContainer />
-      <hr style={{ margin: "10px" }} />
-      <TodoContainter/>
+     
 
     </div>
   );
